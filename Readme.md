@@ -1,6 +1,8 @@
-# Decode Mysteries - CS/IT Tech Event - Innerve IGDTUW
+# Decode Mysteries - CS/IT Tech Event - Innerve 2021 IGDTUW
 
 Decode mysteries is a hidden object game with 3 levels. On each level, you will have to find objects and solve ML/AI-related questions upon finding the object. After completing all levels, you will be redirected to a ML model building competition from which participants will be judged for their model accuracy and winners will be chosen.
+
+Game can be played at : https://decode-mysteries.netlify.app/
 
 <img src="https://ik.imagekit.io/xpgjqzrcn7x/image_1__sMAfOdrwX.png?updatedAt=1639393437145">
 
