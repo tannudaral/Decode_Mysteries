@@ -1,0 +1,222 @@
+/*#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+} 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+  }
+  .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .bar {
+    width: 10px;
+    height: 70px;
+    background: #fff;
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+    animation: loader 1.2s linear infinite;
+  }
+  .bar1 {
+    animation-delay: 0.1s;
+  }
+  .bar2 {
+    animation-delay: 0.2s;
+  }
+  .bar3 {
+    animation-delay: 0.3s;
+  }
+  .bar4 {
+    animation-delay: 0.4s;
+  }
+  .bar5 {
+    animation-delay: 0.5s;
+  }
+  .bar6 {
+    animation-delay: 0.6s;
+  }
+  .bar7 {
+    animation-delay: 0.7s;
+  }
+  .bar8 {
+    animation-delay: 0.8s;
+  }
+  
+@keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      background:white ;
+    }
+    50% {
+      transform: scaleY(1);
+      background: rgb(243, 164, 164);
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: transparent;
+    }
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+body {
+    background-image: url(img/bg2);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+@font-face {
+    font-family: AlbertsthalTyperwriter;
+    src: url(fonts/AlbertsthalTypewriter.ttf);
+}
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#Scarf {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: inline-block;
+    opacity: 0.9;
+    top: 15%;
+    left: 32%;
+}
+#Calendar {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    opacity: 0.7;
+    left: 40%;
+}
+#Key {
+    width: 100px;
+    height: 200px;
+    position: fixed;
+    display: block;
+    right: 0%;
+    top: 35%;
+}
+#JewelryCasket {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    left: 88%;
+    top: 16%;
+}
+#Floppy {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+    left: 52%;
+    top: 52%;
+}
+#Pendant {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 0.9;
+    left: 60%;
+    top: 45%;
+}
+#Rope {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+    left: 55%;
+    bottom:60%;
+}
+#Sock {
+    width: 130px;
+    height: 130px;
+    position: fixed;
+    display: block;
+    opacity: 1;
+    top: 35%;
+    left: 0%;
+}
+#Journal {
+    width: 140px;
+    height: 250px;
+    position: fixed;
+    display: block;
+    opacity: 0.9;
+    right: 6%;
+    bottom: 15%;
+    transform: rotate(22deg);
+}
+#Cassette {
+    width: 90px;
+    height: 50px;
+    position: fixed;
+    display: block;
+    opacity: 0.6;
+    left: 28%;
+    bottom: 50%;
+    transform: rotate(15deg);
+}
+
+#grid {
+    height: fit-content;
+    width: 75%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-style: outset;
+    border-color: wheat;
+    border-width: 2px;
+    align-content: center;
+    padding: 0 2.5% 1% 2.5%;
+    
+}
+
+span {
+    padding: 1%;
+    padding-bottom: 0;
+    color: white;
+    font-size: 30px;
+    font-family: AlbertsthalTyperwriter;
+    margin: 0.5%;
+    margin-top: 0.3%;
+}

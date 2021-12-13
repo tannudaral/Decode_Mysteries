@@ -1,0 +1,173 @@
+/*#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+} 
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+  }
+  .middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .bar {
+    width: 10px;
+    height: 70px;
+    background: #fff;
+    display: inline-block;
+    transform-origin: bottom center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
+    animation: loader 1.2s linear infinite;
+  }
+  .bar1 {
+    animation-delay: 0.1s;
+  }
+  .bar2 {
+    animation-delay: 0.2s;
+  }
+  .bar3 {
+    animation-delay: 0.3s;
+  }
+  .bar4 {
+    animation-delay: 0.4s;
+  }
+  .bar5 {
+    animation-delay: 0.5s;
+  }
+  .bar6 {
+    animation-delay: 0.6s;
+  }
+  .bar7 {
+    animation-delay: 0.7s;
+  }
+  .bar8 {
+    animation-delay: 0.8s;
+  }
+  
+@keyframes loader {
+    0% {
+      transform: scaleY(0.1);
+      background:white ;
+    }
+    50% {
+      transform: scaleY(1);
+      background: rgb(243, 164, 164);
+    }
+    100% {
+      transform: scaleY(0.1);
+      background: transparent;
+    }
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+body {
+    background-image: url(img/bg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+@font-face {
+    font-family: AlbertsthalTyperwriter;
+    src: url(fonts/AlbertsthalTypewriter.ttf);
+}
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+#Shoe {
+    width: 100px;
+    height: 100px;
+    transform: translateY(200%);
+    right: 1%;
+    position: fixed;
+    display: block;
+    opacity: 0.8;
+}
+#Hat {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 50%;
+    position: relative;
+    display: block;
+    opacity: 0.55;
+}
+#Remote {
+    width: 80px;
+    height: 70px;
+    transform: translateY(300%);
+    position: relative;
+    display: block;
+    opacity: 0.7;
+}
+#Barrel {
+    width: 100px;
+    height: 100px;
+    top: 1%;
+    left: 30%;
+    position: relative;
+    display: block;
+    opacity: 0.9;
+}
+#Knife {
+    width: 100px;
+    height: 100px;
+    top: 10%;
+    left: 40%;
+    position: relative;
+    display: block;
+}
+
+#grid {
+    height: fit-content;
+    width: 80%;
+    bottom: 5%;
+    left: 10%;
+    right: 10%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-style: outset;
+    border-color: wheat;
+    border-width: 2px;
+}
+
+span {
+    padding: 0.5%;
+    color: white;
+    font-size: 30px;
+    font-family: AlbertsthalTyperwriter;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}

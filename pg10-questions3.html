@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Mysteries</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/level3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body oncontextmenu="return false;">
+    <div class="container">
+    <h1>ENTER CODE</h1>
+    <div class="userInput">
+        <input type="text" id="ist" maxlength="1" onkeyup="clickEvent(this,'sec')">
+        <input type="text" id="sec" maxlength="1" onkeyup="clickEvent(this,'third')">
+        <input type="text" id="third"maxlength="1" onkeyup="clickEvent(this,'fourth')">
+        <input type="text" id="fourth" maxlength="1" onkeyup="clickEvent(this,'fifth')">
+        <input type="text" id="fifth" maxlength="1">
+    </div>
+    <button onclick="btn1()">CONFIRM</button></a>
+    <audio controls autoplay loop hidden>
+        <source src="bgm/bgm.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+    <script type="text/javascript">
+        function clickEvent(first, last){
+            if(first.value.length){
+                document.getElementById(last).focus();
+            }
+        }
+        function btn1(){
+            var v1 = document.getElementById('ist').value;
+            var v2 = document.getElementById('sec').value;
+            var v3 = document.getElementById('third').value;
+            var v4 = document.getElementById('fourth').value;
+            var v5 = document.getElementById('fifth').value;
+            if((v1 == "C" || v1 == "c") && (v2 == "O"|| v2 == "o") && (v3=="B" || v3=="b") && (v4 =="O" || v4=="o") && (v5 =="L" || v5=="l")){
+                alert("Correct! Now you will be redirected to the Kaggle Competition!");
+                window.open("https://www.kaggle.com/t/e6c235621bdd4f34a4e5ae707613a07f");
+            }
+            else{
+                alert("Wrong Answer! Try Again")
+            }
+        }
+    </script>
+      <script type="text/javascript">
+        /*$(document).ready(function() {
+	    $('body').bind('cut copy paste', function (e) {
+		    e.preventDefault();
+	    })
+	    $(".code").on("contextmenu", function(e) {
+		    return false;
+	    })
+    })*/
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+      </script>
+</body>
+</html>

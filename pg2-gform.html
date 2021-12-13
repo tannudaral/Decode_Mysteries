@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decode Mysteries</title>
+    <link rel="stylesheet" type="text/css" href="css/gform.css">
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body oncontextmenu="return false;">
+    <main>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaZucRIWqJUaeiOumSIfvVhOR8MOoq_ancGi6GHz1neRvDXg/viewform?embedded=true" width="1050" height="640" frameborder="0" marginheight="0" marginwidth="0" class="google-form">Loading…</iframe>
+        <section>
+            <p><a href="pg3-popup.html">
+            <button type="button" class="next_btn">Next</button></a>
+            </p>
+        </section>
+        <!-- <audio controls autoplay loop hidden>
+            <source src="bgm/bgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio> -->
+    </main>
+          <script type="text/javascript">
+        /*$(document).ready(function() {
+	    $('body').bind('cut copy paste', function (e) {
+		    e.preventDefault();
+	    })
+	    $(".code").on("contextmenu", function(e) {
+		    return false;
+	    })
+    })*/
+        document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+      </script>
+</body>

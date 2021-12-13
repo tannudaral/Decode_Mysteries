@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Decode Mysteries</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/level2.css">
+    </head>
+    <body oncontextmenu="return false;">
+      </script>
+        <div id="loader" class="middle">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+            <div class="bar bar4"></div>
+            <div class="bar bar5"></div>
+            <div class="bar bar6"></div>
+            <div class="bar bar7"></div>
+            <div class="bar bar8"></div>
+        </div>
+        <div class="unselectable" id="mouse">
+        <img id="Scarf" src="img/scarf.png">
+        <img id="Calendar" src="img/calendar.png">
+        <img id="JewelryCasket" src="img/casket.png">
+        <img id="Sock" src="img/sock.png">
+        <img id="Floppy" src="img/floppy.png">
+        <img id="Pendant" src="img/pendant.png">
+        <img id="Rope" src="img/rope.png">
+        <img id="Key" src="img/key.png">
+        <img id="Journal" src="img/journal.png">
+        <img id="Cassette" src="img/cassette.png">
+        </div>
+        <div id="grid">
+            <span id="1">Scarf</span>
+            <span id="2">Calendar</span>
+            <span id="3">Woolen Sock</span>
+            <span id="4">Jewelry Casket</span>
+            <span id="5">Floppy</span>
+            <span id="6">Pendant</span>
+            <span id="7">Jute Rope</span>
+            <span id="8">Key</span>
+            <span id="9">Journal</span>
+            <span id="10">Cassette</span>
+        </div>
+        <audio controls autoplay loop hidden>
+            <source src="bgm/bgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        
+        <script type="text/javascript">
+            let user_score = 0;
+            document.addEventListener('contextmenu', event => event.preventDefault());
+
+            document.getElementById("mouse").style.cursor = "default";
+
+            document.onkeydown = function (e) {
+          if (event.keyCode == 123) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+            return false;
+          }
+          if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+            return false;
+          }
+        };
+            document.getElementById('Scarf').onclick = function() {
+                user_score+=1
+                document.getElementById('1').style.textDecorationLine='line-through'; 
+                document.getElementById('Scarf').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Calendar').onclick = function() {
+                user_score+=1
+                document.getElementById('2').style.textDecorationLine='line-through'; 
+                document.getElementById('Calendar').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Sock').onclick = function() {
+                user_score+=1
+                document.getElementById('3').style.textDecorationLine='line-through'; 
+                document.getElementById('Sock').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('JewelryCasket').onclick = function() {
+                user_score+=1;
+                document.getElementById('4').style.textDecorationLine='line-through'; 
+                document.getElementById('JewelryCasket').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Floppy').onclick = function() {
+                user_score+=1;
+                document.getElementById('5').style.textDecorationLine='line-through'; 
+                document.getElementById('Floppy').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Pendant').onclick = function() {
+                user_score+=1
+                document.getElementById('6').style.textDecorationLine='line-through'; 
+                document.getElementById('Pendant').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Rope').onclick = function() {
+                user_score+=1
+                document.getElementById('7').style.textDecorationLine='line-through'; 
+                document.getElementById('Rope').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Key').onclick = function() {
+                user_score+=1
+                document.getElementById('8').style.textDecorationLine='line-through'; 
+                document.getElementById('Key').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Journal').onclick = function() {
+                user_score+=1;
+                document.getElementById('9').style.textDecorationLine='line-through'; 
+                document.getElementById('Journal').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.getElementById('Cassette').onclick = function() {
+                user_score+=1;
+                document.getElementById('10').style.textDecorationLine='line-through'; 
+                document.getElementById('Cassette').style.visibility='hidden';
+                if(user_score==10){
+                alert("Congratulations! You have found all the objects.");
+                window.location.href="pg8-questions2.html"
+                }
+            }
+            document.onreadystatechange = function() {
+                    if (document.readyState !== "complete") {
+                        document.querySelector(
+                        "body").style.visibility = "hidden";
+                        document.querySelector(
+                        "#loader").style.visibility = "visible";
+                    } 
+                    else {
+                        document.querySelector(
+                        "#loader").style.display = "none";
+                        document.querySelector(
+                        "body").style.visibility = "visible";
+                    }
+                }
+        </script>
+    </body>
+    
+</html>
